@@ -23,10 +23,12 @@ Introduction
 
 This is a fork of comma's openpilot: https://github.com/commaai/openpilot, and contains tweaks for Honda and GM vehicles.  It is open source and inherits the MIT license.  By installing this software, you accept all responsibility for anything that might occur while you use it.  All contributors to this fork are not liable, including me.  <b>Use at your own risk.</b>
 
+Yes I'm still on a grey panda and my original OP3T.  I will upgrade someday to C3 or C4 or CX.  But haven't found the need to yet.  Awesomeness branch on my 2018 Honda Pilot drives like a dream so I haven't mustered the $ or the willpower to grab the C3 (yet).  Moreover, I'm just a cheapass and also lazy to mess with something that already drives awesome.  Until I feel the absolute need to upgrade, I'll continue to enhance the awesomeness branch, which takes the best parts of things and mashes them together like a finely tuned franken-code.  I'm really, really picky, so only will put the best stuff in awesomeness. For those, like me which are on the old hardware, but absolutely MUST have the "latest" you can try kegman-0.8.2-088model, which ports the 0.8.8 model into 0.8.2 (it works, but I preer the 0.8.3 model which is why the awesomeness branch has 0.8.3 model).
+
 If you wish you can buy me a beer or 3:  https://www.patreon.com/kegman
 
 #### Branches
-<b>kegman</b> - this is the default branch
+<b>kegman-grey-panda-OP3T-awesomeness</b> - this is the default branch until I find the need or desire to upgrade my HW.  Should still work with Gray Panda / Black Panda / C2
 
 <b>kegman-BoschGasPress</b> - this branch gives Honda Bosch users the ability to press the gas without disengaging OP for more "stock ACC"-like behavior.
 
@@ -72,6 +74,7 @@ See openpilot's official release notes here: https://github.com/commaai/openpilo
 - Grey panda still working - will continue to support as long as I can
 - OG Eon still working - will continue to support as long as I can
 - Reverted to standard thermald.py - no more battery management as most people don't have a need for this anymore with C2
+- *** YOU MAY NEED TO REDUCE KP and KI for 0.8.2+ ***  check out my sample kegman.json's in data/openpilot directory
 
 #### v0.8.1
 - Nudgeless lane change no longer working until comma stabilizes their lane change code
